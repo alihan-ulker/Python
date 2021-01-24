@@ -1,6 +1,9 @@
 ﻿import pandas as pd
+  
 df=pd.read_csv('abalone.csv')
+
 #butun ozniteliklerin min,max,ortalaması,standart sapması
+
 #LENGTH
 l1=df['Length'].min()
 l2=df['Length'].max()
@@ -15,6 +18,7 @@ print('-Ortalama')
 print(l3)
 print('-Standart Sapma')
 print(l4)
+
 #DIAMETER
 d1=df['Diameter'].min()
 d2=df['Diameter'].max()
@@ -29,6 +33,7 @@ print('-Ortalama')
 print(d3)
 print('-Standart Sapma')
 print(d4)
+
 #HEIGHT
 h1=df['Height'].min()
 h2=df['Height'].max()
@@ -43,6 +48,7 @@ print('-Ortalama')
 print(h3)
 print('-Standart Sapma')
 print(h4)
+
 #WHOLE WEIGHT
 w1=df['Whole weight'].min()
 w2=df['Whole weight'].max()
@@ -57,6 +63,7 @@ print('-Ortalama')
 print(w3)
 print('-Standart Sapma')
 print(w4)
+
 #SHUCKED WEIGHT
 s1=df['Shucked weight'].min()
 s2=df['Shucked weight'].max()
@@ -71,6 +78,7 @@ print('-Ortalama')
 print(s3)
 print('-Standart Sapma')
 print(s4)
+
 #VISCERA WEIGHT
 v1=df['Viscera weight'].min()
 v2=df['Viscera weight'].max()
@@ -85,6 +93,7 @@ print('-Ortalama')
 print(v3)
 print('-Standart Sapma')
 print(v4)
+
 #SHELL WEIGHT
 sh1=df['Shell weight'].min()
 sh2=df['Shell weight'].max()
@@ -99,6 +108,7 @@ print('-Ortalama')
 print(sh3)
 print('-Standart Sapma')
 print(sh4)
+
 #RINGS
 r1=df['Rings'].min()
 r2=df['Rings'].max()
@@ -115,44 +125,55 @@ print('-Standart Sapma')
 print(r4)
 
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 df=pd.read_csv('abalone.csv')
+
 #data olusturma
 df.plot(kind='scatter',x='Diameter',y='Length')
+
 #Grafik olusturma
 plt.title('Length ve Diameter - Scatter Grafik')
 plt.xlabel('Diameter')
 plt.ylabel('Length')
+
 #png olarak kaydetme
 plt.savefig('Length and Diameter Scatter.png')
 plt.show()
 
 #data olusturma
 df.plot(kind='scatter',x='Whole weight',y='Height')
+
 #Grafik olusturma
 plt.title('Height ve Whole Weight - Scatter Grafik')
 plt.xlabel('Whole weight')
 plt.ylabel('Height')
+
 #png olarak kaydetme
 plt.savefig('Height and Whole Weight Scatter.png')
 plt.show()
 
 #data olusturma
 df.plot(kind='scatter',x='Shucked weight',y='Viscera weight')
+
 #Grafik olusturma
 plt.title('Shucked Weight ve Viscera Weight - Scatter Grafik')
 plt.xlabel('Shucked weight')
 plt.ylabel('Viscera weight')
+
 #png olarak kaydetme
 plt.savefig('Shucked Weight and Viscera Weight Scatter.png')
 plt.show()
 
 #data olusturma
 df.plot(kind='scatter',x='Shell weight',y='Rings')
+
 #Grafik olusturma
 plt.title('Shell Weight ve Rings - Scatter Grafik')
 plt.xlabel('Shell weight')
 plt.ylabel('Rings')
+
 #png olarak kaydetme
 plt.savefig('Shell Weight and Rings Scatter.png')
 plt.show()
@@ -161,35 +182,48 @@ plt.show()
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+
 #abalone verisetinin tum sutunlari secildi
+
 column_names = ["Sex", "Length", "Diameter", "Height", "Whole weight", 
                 "Shucked weight", "Viscera weight", "Shell weight", "Rings"]
+
 data = pd.read_csv("abalone.data", names=column_names)
+
 print("Number of samples: %d" % len(data))
+
 data.head()
+
 #Sex sutununu string deger oldugu icin silindi
 for label in "MFI":
     data[label] = data["Sex"] == label
 del data["Sex"]
 data.head()
+
 #Ring sutunu degerleri 2 boyutlu dizi olusturmak icin silindi
 y = data.Rings.values
 del data["Rings"]
+
 #Egitim sutununun %80 i rastgele secildi kalani test icin kullanildi
 X = data.values.astype(np.float)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test=train_test_split(X,y,test_size=0.2,random_state=0)
+
 #Karar agaci olusturuldu
 from sklearn.tree import DecisionTreeRegressor
 model = DecisionTreeRegressor()
 model.fit(X_train, y_train)
 predicted_test_y = model.predict(X_test)
 predicted_train_y = model.predict(X_train)
+
 #Confusion Matrix olusturuldu
 from sklearn.metrics import confusion_matrix
 expected = [1, 1, 0, 1, 0, 0, 1, 0]
 predicted = [1, 0, 0, 1, 0, 0, 1, 1]
 results = confusion_matrix(expected, predicted)
+
 print('Confusion Matrix')
+
 print(results)
-print('Alihan ÜLKER - 131001036')
+
+print('Alihan ÜLKER')
