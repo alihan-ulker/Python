@@ -1,0 +1,161 @@
+﻿--Length--
+
+-Minimum
+0.075
+
+-Maksimum
+0.815
+
+
+-Ortalama
+
+0.5239920995930099
+
+
+-Standart Sapma
+
+0.12009291256479998
+
+
+--Diameter--
+
+-Minimum
+0.055
+
+-Maksimum
+0.65
+
+
+-Ortalama
+
+0.407881254488869
+
+
+-Standart Sapma
+
+0.09923986613365918
+
+
+--Height--
+
+-Minimum
+0.0
+
+-Maksimum
+1.13
+
+
+-Ortalama
+
+0.1395163993296614
+
+
+-Standart Sapma
+
+0.04182705660725703
+
+
+--Whole weight--
+
+-Minimum
+0.002
+
+-Maksimum
+2.8255
+
+
+-Ortalama
+
+0.82874215944458
+
+
+-Standart Sapma
+
+0.4903890182309973
+
+
+--Shucked weight--
+
+-Minimum
+0.001
+
+-Maksimum
+1.4880000000000002
+
+
+-Ortalama
+
+0.35936748862820106
+
+
+-Standart Sapma
+
+0.22196294903322014
+
+
+--Viscera weight--
+
+-Minimum
+0.0005
+
+-Maksimum
+0.76
+
+
+-Ortalama
+
+0.18059360785252604
+
+
+-Standart Sapma
+
+0.10961425025968442
+
+
+--Shell weight--
+
+-Minimum
+0.0015
+
+-Maksimum
+1.005
+
+
+-Ortalama
+
+0.23883085946851795
+
+
+-Standart Sapma
+
+0.13920266952238575
+
+
+--Rings--
+
+-Minimum
+1
+
+-Maksimum
+29
+
+
+-Ortalama
+
+9.933684462532918
+
+
+-Standart Sapma
+
+3.2241690320681133
+
+
+Number of samples: 4177
+
+
+Confusion Matrix
+[[3 1]
+ [1 3]]
+
+
+Alihan ÜLKER
