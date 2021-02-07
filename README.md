@@ -8,3 +8,5 @@ Scatter Grafikleri oluşturulur (Length ve Diameter, Height ve Whole Weight, Shu
 Oluşturulan bu grafikler .png olarak kayıt edilir.
 
 Veri setinin sütunları seçilerek Eğitim için kullanılır (%80 i eğitim için, %20 si test için kullanılır).
+
+Sonuçları result.txt dosyasında bulabilirsiniz.
