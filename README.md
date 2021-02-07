@@ -1,10 +1,10 @@
 # Python
-Python - Min, Max, Ortalama, Standart Sapma
+Python ile veri tabanına giriş için denemiş olduğum python kodlarıdır.
 
-Data oluşturma
+Veri tabanı olarak kullanılan abalone veri seti ile bütün özniteliklerin min, max, ortalama, ve standart sapması hesaplanır.
 
-Grafik oluşturma
+Scatter Grafikleri oluşturulur (Length ve Diameter, Height ve Whole Weight, Shucked Weight ve Viscera Weight, Shell Weight ve Rings).
 
-.png olarak kaydetme
+Oluşturulan bu grafikler .png olarak kayıt edilir.
 
-Eğitim / Test oluşturma
+Veri setinin sütunları seçilerek Eğitim için kullanılır (%80 i eğitim için, %20 si test için kullanılır).
